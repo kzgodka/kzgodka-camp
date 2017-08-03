@@ -1,5 +1,8 @@
-var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+var gulp        = require('gulp');
+var $           = require('gulp-load-plugins')();
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
+var reload      = browserSync.reload;
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
@@ -17,11 +20,22 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(gulp.dest('css'));
+      .pipe(gulp.dest('css'))
+      .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+// Static Server + watching scss/html files
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch("./scss/*.scss", ['sass']);
+    gulp.watch("/*.html").on('change', browserSync.reload);
 });
+
+
+gulp.task('default', ['serve']);
 
 
