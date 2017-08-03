@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71704bf-427a-4968-9525-15b2cc470f62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_colors.scss" afterPath="$PROJECT_DIR$/scss/_colors.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_login.scss" afterPath="$PROJECT_DIR$/scss/_login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_logo.scss" afterPath="$PROJECT_DIR$/scss/_logo.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="_login.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_login.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="462">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -117,10 +113,9 @@
     <handled-path value="$PROJECT_DIR$/bower_components/what-input/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="336" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="898" />
+    <option name="width" value="1440" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -201,15 +196,15 @@
       <option name="presentableId" value="Default" />
       <updated>1500913293227</updated>
       <workItem from="1500913294552" duration="1411000" />
-      <workItem from="1501164536060" duration="24563000" />
+      <workItem from="1501164536060" duration="24901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25974000" />
+    <option name="totallyTimeSpent" value="26312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -333,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="462">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
