@@ -22,15 +22,18 @@
                     <p>Aby, zaimportować dane zaloguj się do swojego banku</p>
                     <form>
                         <div class="avatar"></div>
-                        <input id="username" type="hidden" required="" name="username" placeholder="USERNAME"></input>
-                        <div class="user-active">
+                        <input id="username" class="hide" name="username" placeholder="USERNAME"></input>
+                        <div class="user-active" id="user-active">
                             <span>127633223</span>
-                            <button class="cancel"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="cancel" id="cancel"><i class="fa fa-times" aria-hidden="true"></i></button>
                         </div>
-                        <input id="password" type="password" required="" name="password" placeholder="PASSWORD"></input>
+                        <input class="password" id="password" type="password" name="password" placeholder="PASSWORD"></input>
                         <button class="button keyboard"><i class="fa fa-keyboard-o" aria-hidden="true"></i></button>
+                        <div class="wrongCredentials">
+
+                        </div>
                         <button class="button btn-other">SELECT OTHER</button>
-                        <button class="button submit" type="submit" value="Submit">GO</button>
+                        <button class="button submit" id="submit" type="submit" value="Submit">GO</button>
                     </form>
                 </div>
                 <nav>
@@ -40,7 +43,6 @@
                         <li>CONTACT</li>
                     </ul>
                     <button class="social"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-
                 </nav>
             </div>
         </div>
