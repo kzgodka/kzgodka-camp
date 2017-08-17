@@ -1,27 +1,6 @@
 $(document).foundation();
 
 
-    // (function () {
-    //     const button = document.querySelector("button[type='submit']");
-    //     const loginInput = document.querySelector(".password");
-    //
-    //     button.addEventListener("click", function () {
-    //         event.preventDefault();
-    //
-    //         if (loginInput.value !== "") {
-    //
-    //             window.location.href = "dashboard.html";
-    //         }
-    //         else {
-    //             document.getElementById("password").className += " error";
-    //         }
-    //
-    //         console.log(loginInput.value);
-    //
-    //     });
-    //
-    // })();
-
 $(document).ready(function () {
    $('#submit').click(function(e){
        e.preventDefault();
@@ -43,10 +22,12 @@ function call() {
         },
         url: "https://efigence-camp.herokuapp.com/api/login",
         error: function(response) {
-            console.log(response.responseText);
+            var r = jQuery.parseJSON(response.responseText);
+            $('.wrongCredentials').html(r.message);
+            $('.wrongCredentials').removeClass("hide");
         },
         success: function(response) {
-            console.log(response);
+            window.location.href = "dashboard.html";
         }
     });
 }
