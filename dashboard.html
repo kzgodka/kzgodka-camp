@@ -4,11 +4,105 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New sites</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <h1>dashboard</h1>
+    <header>
+        <div class="row">
+            <div class="small-5 columns">
+                <div class="user-info">
+                    <img src="images/ef_log.png" alt="logo">
+                    <img class="user-avatar" src="images/ef_log.png" alt="avatar">
+                    <h3>Jan Kowalski</h3>
+                    <button class="messages">
+                        <i class="fa fa-envelope" aria-hidden="true" aria-describedby="messageCount">
+                            <span class="badge" id="messageCount">2</span>
+                        </i>
+                    </button>
+                    <button><i class="fa fa-cog" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="small-5 columns">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home" aria-hidden="true"></i>HOME
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>ANALYSE</a></li>
+                        <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>PLAN</a></li>
+                        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>EARN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="small-2 columns">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button><i class="fa fa-power-off" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="account-info">
+            <div class="row">
+                <div class="small-6 columns">
+                    <h2>Finance life stream</h2>
+                </div>
+                <div class="small-6 columns">
+                    <button>Add</button>
+                    <button class="button">BANK</button>
+                    <button class="button">PAYMENT</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-3 columns">
+                    <h4>Balance</h4>
+                    <span class="money">7200,34 PLN</span>
+                </div>
+                <div class="small-3 columns">
+                    <h4>Available funds</h4>
+                    <span class="money">7200,34 PLN</span>
+                </div>
+                <div class="small-3 columns">
+                    <h4>Scheduled payments</h4>
+                    <span class="money">7200,34 PLN</span>
+                    <button class="button">FAST PAY</button>
+                </div>
+                <div class="small-3 columns">
+                    <div class="switch">
+                        <p>Account analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart">
+
+        </div>
+        <div>
+            <div class="row">
+                <div class="small-6 columns">
+                    <div class="products">
+                        <h5>Products</h5>
+                        <div class="row">
+                            <div class="small-6 columns">
+
+                            </div>
+                            <div class="small-6 columns">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-6 columns">
+                    <div class="history">
+                        <h5>History</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/what-input/dist/what-input.js"></script>
