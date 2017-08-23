@@ -7,6 +7,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+  // Wartość font-family do zmiennej, najlepiej w pliku _fonts.scss
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -21,6 +22,7 @@
 
   h1 {
     font-size: 40px;
+    // J.w.
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
   }
@@ -32,6 +34,7 @@
   form {
     border: 1px solid $colorFormBorder;
     border-radius: 5px;
+    // Zakomentowany, niepotrzebny kod w repo nie jest potrzebny. Git pozwala wrócić do wszystkich wcześniejszych wersji.
     //margin: 100px 20px;
     margin-top: 135px;
     padding: 0 25px 50px 25px;
@@ -66,6 +69,7 @@
       width: 90%;
       margin-bottom: 25px;
       display: inline-block;
+      // Dla porządku nawet standardowe kody kolorów warto uzywać w postaci zmiennych. Białość moze ewoluować w procesie developmentu ;)
       background-image: linear-gradient(to top, #000000, #ffffff);
       background-blend-mode: overlay;
       box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.22);
@@ -93,6 +97,7 @@
         height: 0;
         border-style: solid;
         border-width: 0 20px 20px 20px;
+        // Zamiast literałów kolorów bezpieczniej uzywać ich kodów hash, a w tym przypadku najlepiej zmiennej.
         border-color: transparent transparent darkred transparent;
       }
     }
@@ -109,6 +114,7 @@
     }
 
     .submit {
+      // 2 spacje przed wartością
       background-color:  $colorSubmitButton;
       color: black;
       padding: 5px 40px;
@@ -158,6 +164,3 @@ nav {
     }
   }
 }
-
-
-

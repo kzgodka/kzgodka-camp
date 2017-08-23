@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import 'colors';
 
+// Deklaracje globalne proponuję zamieścić w pliku _globals.scss
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -24,6 +25,7 @@ header {
     font-size: 30px;
     font-weight: 400;
     color: #ffffff;
+    // Rozumiem, że częście dziesiętne pochodzą z Zeplina? :) Do usunięcia.
     letter-spacing: -1.2px;
 
   }
