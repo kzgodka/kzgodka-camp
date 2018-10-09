@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="pl-PL">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,6 +7,10 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 </head>
 <body>
     <header>
@@ -39,8 +43,8 @@
                 </nav>
             </div>
             <div class="small-2 columns">
-                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                <button><i class="fa fa-power-off" aria-hidden="true"></i></button>
+                <button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="logoff"><i class="fa fa-power-off" aria-hidden="true"></i></button>
             </div>
         </div>
     </header>
@@ -51,34 +55,43 @@
                     <h2>Finance life stream</h2>
                 </div>
                 <div class="small-6 columns">
-                    <button>Add</button>
-                    <button class="button">BANK</button>
-                    <button class="button">PAYMENT</button>
+                    <div class="account-settings">
+                        <button>Add</button>
+                        <button class="button">BANK</button>
+                        <button class="button">PAYMENT</button>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="small-3 columns">
                     <h4>Balance</h4>
-                    <span class="money">7200,34 PLN</span>
+                    <span class="balance">7200,34 PLN</span>
                 </div>
                 <div class="small-3 columns">
                     <h4>Available funds</h4>
-                    <span class="money">7200,34 PLN</span>
+                    <span class="funds">7200,34 PLN</span>
                 </div>
                 <div class="small-3 columns">
                     <h4>Scheduled payments</h4>
-                    <span class="money">7200,34 PLN</span>
+                    <span class="payments">7200,34 PLN</span>
                     <button class="button">FAST PAY</button>
                 </div>
                 <div class="small-3 columns">
                     <div class="switch">
-                        <p>Account analysis</p>
+                        <span>Account analysis</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="chart">
+        <div class="account-chart">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="chart">
+                        <canvas id="myChart" width="400" height="100"></canvas>
 
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <div class="row">
@@ -86,11 +99,10 @@
                     <div class="products">
                         <h5>Products</h5>
                         <div class="row">
-                            <div class="small-6 columns">
+                            <div class="small-12 columns">
+                                <div class="product-list">
 
-                            </div>
-                            <div class="small-6 columns">
-
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -98,15 +110,26 @@
                 <div class="small-6 columns">
                     <div class="history">
                         <h5>History</h5>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div class="history-list">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/what-input/dist/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
 <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/products.js"></script>
 </body>
 </html>
