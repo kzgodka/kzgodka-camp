@@ -37,8 +37,3 @@ $('#cancel').click(function(e) {
     $("#username").removeClass("hide");
     $("#user-active").addClass("hide");
 });
-
-
-
-
-
